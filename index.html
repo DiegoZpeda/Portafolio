@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta http-equiv="x-ua-compatible" content="ie=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Title Of Site -->
         <title>Diego &ndash;Portafolio Personal </title>
         <!-- Favicon -->
@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
         <!-- Template Color -->
         <link rel="stylesheet" href="assets/css/color/default.css" id="optional-color"/>
+        <script-- src="https://cdnjs.cloudflare.com/ajax/libs/polyglot.js/2.4.0/polyglot.min.js"></script>
     </head>
     <body id="home" class="template-index" data-spy="scroll" data-target="#scrollspy" data-offset="70">
         <!-- Page Wrapper -->
@@ -61,16 +62,22 @@
                                             <li class="nav-item">
                                                 <a data-scroll class="nav-link active" href="#home">
                                                     <i class="fa fa-home"></i>
-                                                    <span class="link-text">Inicio</span>
+                                                    <span class="link-text" data-i18n="b1" >Inicio</span>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a data-scroll class="nav-link" href="#about">
                                                     <i class="fa fa-user"></i>
-                                                    <span class="link-text">Sobre mi</span>
+                                                    <span class="link-text" data-i18n="b2">Sobre mi</span>
                                                 </a>
                                             </li>
-                                            <li class="nav-item"><a data-scroll class="nav-link" href="#contact"><i class="fa fa-address-book"></i><span class="link-text">Contáctame</span></a></li>
+                                            <li class="nav-item">
+                                                <a data-scroll class="nav-link" href="#projects">
+                                                    <i class="fa-solid fa-file"></i>
+                                                    <span class="link-text" data-i18n="b10">Mis Proyectos</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item"><a data-scroll class="nav-link" href="#contact"><i class="fa fa-address-book"></i><span class="link-text" data-i18n="b3">Contáctame</span></a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -99,21 +106,22 @@
                             <!-- End Banner Image -->
                             <!-- Banner Text -->
                             <div class="banner-text ml-lg-5">
-                                <h2>Hola!</h2>
-                                <h3 class="d-sm-none d-block text-uppercase headline">
-                                    Yo soy <b class="is-visible">Diego</b>
+                                <h2 data-i18n="b6">Hola!</h2>
+                                <h3 class="d-sm-none d-block text-uppercase headline" >
+                                    Yo soy <b class="is-visible" >Diego</b>
                                 </h3>
-                                <h3 class="d-sm-block d-none cd-headline clip text-uppercase">
-                                    Yo soy
+                                <h3 class="d-sm-block d-none cd-headline clip text-uppercase" >
+                                    <span data-i18n="b5">Yo soy</span>
                                     
                                     <span class="cd-words-wrapper">
                                         <b class="is-visible">Diego</b>
-                                        <b class="is-hidden">Estudiante</b>
+                                        <b class="is-hidden">Backend</b>
+                                        <b class="is-hidden" data-i18n="b4">Estudiante</b>
                                         
                                     </span>
                                 </h3>
-                                <p>Estudio Ingenieria en sistemas y redes informaticas en la Universidad Gerardo Barrios</p>
-                                <p>No hay problema sin solución, solo un cable mal conectado.</p>
+                                <p data-i18n="b7">Estudio Ingenieria en Sistemas y Redes Informaticas en la Universidad Gerardo Barrios</p>
+                                <p data-i18n="b8">No hay problema sin solución, solo un cable mal conectado.</p>
                                 <div class="social-links d-flex flex-wrap">
                                     <a href="https://github.com/DiegoZpeda" data-toggle="tooltip" data-placement="top" data-original-title="Github">
                                         <i class="fa-brands fa-github"></i>
@@ -123,13 +131,13 @@
                                     </a>
                                 </div>
                                 <div class="info-button">
-                                    <a href="#about" class="btn btn-secondary about-btn mr-sm-3">
-                                        <span>
+                                    <a href="#contact" class="btn btn-secondary contact-btn mr-sm-3">
+                                        <span >
                                             <i class="fa fa-user mr-2"></i>
-                                            Mas sobre mi
+                                           <span data-i18n="b9">Contáctame</span> 
                                         </span>
                                     </a>
-                                    
+
                                     </a>
                                 </div>
                             </div>
@@ -147,7 +155,7 @@
                         <!-- Section Title -->
                         <div class="section-title">
                             <h1>
-                                Sobre <span>MI</span>
+                                <b data-i18n="A1">Acerca de</b> <span data-i18n="A2">mi</span>
                             </h1>
                             <span class="separator"></span>
                         </div>
@@ -157,18 +165,19 @@
                             <!-- Row -->
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                    <div class="about-text">
-                                        
+                                    <div class="about-text">   
                                         <h4>
-                                            Hola a <span>todos!</span>
+                                            <b data-i18n="A3">Hola a</b> <span data-i18n="A4">todos!</span>
                                         </h4>
-                                        <p>Soy Diego Zepeda, tengo 22 años de edad y soy estudiante de Ingeniería en Sistemas y Redes Informáticas cursando el cuarto año de carrera,
-                                        con un fuerte interés en la configuración de redes, en la construccion de circuitos electronicos y manejo del hardware. 
-                                        Me apasiona la creacion de circuitos y crear soluciones en el ambito de redes</p>
-                                        <a class="mb-4 mb-lg-0 btn btn-primary" download="Diego_CV.pdf" href="assets/download/CV.pdf">
+                                        <p data-i18n="A5">Soy Diego Zepeda, tengo 22 años y actualmente curso el cuarto año de la carrera de Ingeniería en Sistemas y Redes Informáticas. 
+                                            Tengo un fuerte interés en el desarrollo backend, área en la que he participado activamente en diversos proyectos académicos. 
+                                            Me apasionan las redes informáticas por las amplias soluciones que ofrecen, así como la creación de circuitos electrónicos y el manejo de hardware, 
+                                            tanto en dispositivos electrónicos como en computadoras.
+                                            Disfruto diseñar y construir soluciones que combinan software y hardware, impulsado siempre por la curiosidad y el deseo de innovar.</p>
+                                        <a class="mb-4 mb-lg-0 btn btn-primary"  href="assets/download/CV.pdf" target="_blank">
                                             <span>
                                                 <i class="fa fa-download mr-2"></i>
-                                                Descarga mi CV
+                                                <b data-i18n="A6">Descarga mi CV</b>
                                             </span>
                                         </a>
                                     </div>
@@ -177,22 +186,6 @@
                                     <div class="about-details clearfix">
                                         <ul class="float-left w-50 pr-4">
                                             
-                                            <li class="about-text">
-                                                <p><h4>Areas de <span>Interes!</span></h4></p>
-                                            </li>
-                                            <li class="mb-1">
-                                                <p>Redes Informáticas</p>
-                                            </li>
-                                            <li class="mb-1">
-                                                <p>Diseño y gestión de redes</p>
-                                            </li>
-                                            <li class="mb-1">
-                                                <p>Diseño y desarrollo de circuitos electrónico</p>
-                                            </li>
-                                            <li class="mb-1">
-                                                <p>Robótica y electrónica aplicada</p>
-                                            </li>
-                                        </ul>
                                         <ul class="float-right w-50 pl-2">
                                             <img src="assets/images/yo2.jpg" alt="Descripción de la imagen" class="imagen-con-marco">
                                         </ul>
@@ -201,125 +194,510 @@
                             </div>
                             <!-- End Row -->
                         </div>
-                        <!-- Contact Section -->
-                <section id="contact" class="contact section-spacing">
-                    <!-- Container -->
-                    <div class="container">
-                        <!-- Section Title -->
-                        <div class="section-title">
-                            <h1>Contáctame <span>ahora</span></h1>
-                            <span class="separator"></span>
-                        </div>
-                        <!-- End Section Title -->
-                        <!-- Contact Info -->
-                        <div class="content-block contact-info-block">
-                            <!-- Row -->
-                            <div class="row  row-items">
-                                <!-- Contact Address -->
-                                <div class="col-md-6 row-item d-flex align-items-stretch">
-                                    <div class="card-body d-flex flex-row">
-                                        <div class="card-icon"><i class="fa-classic fa-solid fa-location-dot"></i></div>
-                                        <div class="card-content ml-3">
-                                            <h3>Mi dirección</h3>
-                                            <p>Tecapan, Usulutan, El Salvador</p>
+
+
+                        <!-- Diplomas Section -->
+                        <div class="content-block mt-5">
+                            <!-- Section Title -->
+                            <div class="section-title">
+                                <h1><b data-i18n="diplomas_title1">Mis</b> <span data-i18n="diplomas_title2">Diplomas</span></h1>
+                                <span class="separator"></span>
+                            </div>
+
+                            <div class="row">
+                                <!-- Diploma 1 -->
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="card shadow-sm border-0 h-100">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#diplomaModal1">
+                                            <img src="assets/images/diploma1.jpg" class="card-img-top" alt="Diploma 1">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title" data-i18n="diploma_name1">NETWORKING CHALLENGE 2025</h5>
+                                            <p class="card-text" data-i18n="diploma_desc1">Primer lugar en el desafío final NETWORKING CHALLENGE 2025.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End Contact Address -->
-                                <!-- Contact Social Profiles -->
-                                <div class="col-md-6 row-item d-flex align-items-stretch">
-                                    <div class="card-body d-flex flex-row">
-                                        <div class="card-icon"><i class="fa fa-share-alt"></i></div>
-                                        <div class="card-content ml-3">
-                                            <h3>Redes Sociales</h3>
-                                            <div class="social-links d-flex flex-wrap">
-                                                <a href="https://www.facebook.com/enmanuel.zepeda.568" data-toggle="tooltip" data-placement="top" data-original-title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                                                <a href="https://www.instagram.com/_diego.1_/" data-toggle="tooltip" data-placement="top" data-original-title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                                                <a href="https://www.linkedin.com/in/diego-enmanuel-zepeda-renderos-794209354/" data-toggle="tooltip" data-placement="top" data-original-title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                            
+                                <!-- Diploma 2 -->
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="card shadow-sm border-0 h-100">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#diplomaModal2">
+                                            <img src="assets/images/diploma2.PNG" class="card-img-top" alt="Diploma 2">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title" data-i18n="diploma_name2">Evento CLI 2022</h5>
+                                            <p class="card-text" data-i18n="diploma_desc2">Participación en la doceava edición del congreso latinoamericano de informática y comunicaciones.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Diploma 3 -->
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="card shadow-sm border-0 h-100">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#diplomaModal3">
+                                            <img src="assets/images/diploma3.png" class="card-img-top" alt="Diploma 3">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title" data-i18n="diploma_name3">Concurso estudiantil de investigación</h5>
+                                            <p class="card-text" data-i18n="diploma_desc3">Reconocimiento por participación en el concurso estudiantil de investigación de cátedra 2024 UGB.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Diploma 4 (centrado si es el único) -->
+                                <div class="col-md-6 col-lg-4 mb-4 mx-auto">
+                                    <div class="card shadow-sm border-0 h-100">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#diplomaModal4">
+                                            <img src="assets/images/diploma4.png" class="card-img-top" alt="Diploma 4">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title" data-i18n="diploma_name4">Certificado CCNAv7</h5>
+                                            <p class="card-text" data-i18n="diploma_desc4">Certificado por completar CCNAv7: Switching, Routing, and Wireless Essentials.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <section id="skills" class="section-spacing bg-light">
+                            <div class="container">
+                              <!-- Título -->
+                              <div class="section-title text-center">
+                                <h1><b data-i18n="skills_title1">Mis</b> <span data-i18n="skills_title2">habilidades</span> / <span data-i18n="skills_title3"> intereses</span></h1>
+
+                                <span class="separator"></span>
+                              </div>
+                          
+                              <!-- Botones de pestaña -->
+                              <ul class="nav nav-tabs justify-content-center mb-4" id="skillsTab" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="habilidades-tab" data-toggle="tab" href="#habilidades" role="tab"
+                                    aria-controls="habilidades" aria-selected="true" data-i18n="tab_skills">Habilidades</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="intereses-tab" data-toggle="tab" href="#intereses" role="tab"
+                                    aria-controls="intereses" aria-selected="false" data-i18n="tab_interests">Intereses</a>
+                                </li>
+                              </ul>
+                          
+                              <!-- Contenido -->
+                              <div class="tab-content" id="skillsTabContent">
+                                <!-- HABILIDADES -->
+                                <div class="tab-pane fade show active" id="habilidades" role="tabpanel" aria-labelledby="habilidades-tab">
+                                  <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                      <h5 data-i18n="skill_backend">BACKEND</h5>
+                                      <div class="progress">
+                                        <div class="progress-bar bg-primary" style="width: 45%;">45%</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                      <h5 data-i18n="skill_networks">REDES CISCO</h5>
+                                      <div class="progress">
+                                        <div class="progress-bar bg-success" style="width: 60%;">60%</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                      <h5 data-i18n="skill_sysadmin">SySADMIN</h5>
+                                      <div class="progress">
+                                        <div class="progress-bar bg-info" style="width: 70%;">70%</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                      <h5 data-i18n="skill_electronics">ELECTRÓNICA</h5>
+                                      <div class="progress">
+                                        <div class="progress-bar bg-warning" style="width: 80%;">80%</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                          
+                                <!-- INTERESES -->
+                                <div class="tab-pane fade" id="intereses" role="tabpanel" aria-labelledby="intereses-tab">
+                                  <div class="row">
+                                    <div class="col-md-6 col-lg-3 mb-4">
+                                        <div class="interest-card" data-i18n="interest_backend">
+                                          <i class="fas fa-code me-2"></i>Desarrollador Backend
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="col-md-6 col-lg-3 mb-4">
+                                        <div class="interest-card" data-i18n="interest_electronics">
+                                          <i class="fas fa-microchip me-2"></i>Electrónica
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="col-md-6 col-lg-3 mb-4">
+                                        <div class="interest-card" data-i18n="interest_networks">
+                                          <i class="fas fa-network-wired me-2"></i>Redes Cisco
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="col-md-6 col-lg-3 mb-4">
+                                        <div class="interest-card" data-i18n="interest_sysadmin">
+                                          <i class="fas fa-server me-2"></i>SysAdmin
+                                        </div>
+                                      </div>
+                                      
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                          
+                          
+
+                        <section id="projects" class="about section-spacing">
+                            <div class="container">
+                                <!-- Section Title -->
+                                <div class="section-title">
+                                    <h1>
+                                        <span data-i18n="projects_title">Mis</span> <span data-i18n="projects_title2">Proyectos</span>
+                                    </h1>
+                                    <span class="separator"></span>
+                                </div>
+                        
+                                <div class="content-block">
+                                    <div class="row">
+                                        <!-- Proyecto 1 -->
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="about-text">
+                                                <h4 data-i18n="p1_title">Shulton Parking</h4>
+                                                <p>
+                                                    <strong data-i18n="p1_name">Shulton Parking:</strong> 
+                                                    <span data-i18n="p1_description">
+                                                        Proyecto que busca facilitar la búsqueda de estacionamientos en el municipio de Usulután, integrando un sistema funcional con mapas y gestión de espacios.
+                                                    </span><br>
+                                                    <span data-i18n="pro1" style="color: #a0a6ac; font-style: italic;">Proyecto estudiantil</span> <br>
+                                                    <strong data-i18n="role">Rol:</strong> 
+                                                    <span data-i18n="p1_role">Desarrollador Backend</span><br>
+                                                    <strong data-i18n="technologies">Tecnologías:</strong> 
+                                                    PHP, CSS, JavaScript, Google Maps API<br>
+                                                    
+                                                </p>
+                                                
+                                                <a class="btn btn-primary mt-3" href="https://github.com/EmerLopez/shulton_parking" target="_blank">
+                                                    <i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i> 
+                                                    <span data-i18n="view_github">Ver en GitHub</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div id="carouselProyecto1" class="carousel slide about-details" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/Sk.png" class="d-block w-100" alt="Inventario 1">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/Sk3.png" class="d-block w-100" alt="Inventario 2">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/Sk1.png" class="d-block w-100" alt="Inventario 2">
+                                                    </div>
+                                                </div>
+                                                <!-- Controles -->
+                                                <a class="carousel-control-prev" href="#carouselProyecto1" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselProyecto1" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Proyecto 2 -->
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                            <div class="about-text">
+                                                <h4 data-i18n="p2_title">WonderZoo</h4>
+                                                <p>
+                                                    <strong data-i18n="p2_name">WonderZoo:</strong> 
+                                                    <span data-i18n="p2_description">
+                                                        Aplicación educativa dirigida a niños, que enseña las clasificaciones de animales mediante ilustraciones y elementos interactivos.
+                                                    </span><br>
+                                                    <span data-i18n="pro1" style="color: #a0a6ac; font-style: italic;">Proyecto estudiantil</span> <br>
+                                                    <strong data-i18n="role">Rol:</strong> 
+                                                    <span data-i18n="p2_role">Ilustrador y desarrollador</span><br>
+                                                    <strong data-i18n="technologies">Tecnologías:</strong> 
+                                                    C#, JavaScript
+                                                </p>
+                                                <a class="btn btn-primary mt-3" href="https://github.com/EmerLopez/wonderzoo" target="_blank">
+                                                    <i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i> 
+                                                    <span data-i18n="view_github">Ver en GitHub</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                            <div id="carouselProyecto2" class="carousel slide about-details" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/wonder1.png" class="d-block w-100" alt="Robot 1">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/wonder2.png" class="d-block w-100" alt="Robot 2">
+                                                    </div>
+                                                </div>
+                                                <!-- Controles -->
+                                                <a class="carousel-control-prev" href="#carouselProyecto2" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselProyecto2" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Proyecto 3 -->
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                            <div class="about-text">
+                                                <h4 data-i18n="p3_title">INU-NET</h4>
+                                                <p>
+                                                    <strong data-i18n="p3_name">INU-NET:</strong> 
+                                                    <span data-i18n="p3_description">
+                                                        Proyecto de red desarrollado en Cisco Packet Tracer para proponer una solución optimizada a la infraestructura de red del Instituto Nacional de Usulután.
+                                                    </span><br>
+                                                    <span data-i18n="pro1" style="color: #a0a6ac; font-style: italic;">Proyecto estudiantil</span> <br>
+                                                    <strong data-i18n="role">Rol:</strong> 
+                                                    <span data-i18n="p3_role">Encargado de la parte de seguridad en la red</span><br>
+                                                    <strong data-i18n="technologies">Tecnologías:</strong> 
+                                                    Cisco Packet Tracer, OSPF, LAG, VLAN, STP, DHCP, IPSEC, GRE, TACACS, ACL, NAT (IPv4 e IPv6)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                            <div id="carouselProyecto3" class="carousel slide about-details" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/r1.png" class="d-block w-100" alt="Robot 1">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/r2.png" class="d-block w-100" alt="Robot 2">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/r3.png" class="d-block w-100" alt="Robot 2">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/r4.png" class="d-block w-100" alt="Robot 2">
+                                                    </div>
+                                                </div>
+                                                <!-- Controles -->
+                                                <a class="carousel-control-prev" href="#carouselProyecto3" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselProyecto3" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Proyecto 4 -->
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                            <div class="about-text">
+                                                <h4 data-i18n="p4_title">Virtu-Call</h4>
+                                                <p>
+                                                    <strong data-i18n="p4_name">Virtu-Call:</strong> 
+                                                    <span data-i18n="p4_description">
+                                                        Implementación de un sistema de llamadas virtuales con operadora automática, configurada desde cero con software libre.
+                                                    </span><br>
+                                                    <span data-i18n="pro1" style="color: #a0a6ac; font-style: italic;">Proyecto estudiantil</span> <br>
+                                                    <strong data-i18n="role">Rol:</strong> 
+                                                    <span data-i18n="p4_role">Desarrollador (configuración del servidor Asterisk)</span><br>
+                                                    <strong data-i18n="technologies">Tecnologías:</strong> 
+                                                    Asterisk, Ubuntu Server, SIP, Zoiper, NAT, LAN, VMware
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                            <div id="carouselProyecto4" class="carousel slide about-details" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/v1.png" class="d-block w-100" alt="Robot 1">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/v2.png" class="d-block w-100" alt="Robot 2">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/v3.png" class="d-block w-100" alt="Robot 2">
+                                                    </div>
+                                                </div>
+                                                <!-- Controles -->
+                                                <a class="carousel-control-prev" href="#carouselProyecto4" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselProyecto4" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <script>
+                            $('.carousel').carousel({
+                              interval: 3000
+                            });
+                          </script>
+                                                  
+                        
+                        <!-- Contact Section -->
+                        <section id="contact" class="contact section-spacing">
+                            <!-- Container -->
+                            <div class="container">
+                                <!-- Section Title -->
+                                <div class="section-title">
+                                    <h1><span data-i18n="contact_title">Contáctame</span> <span data-i18n="contact_now">ahora</span></h1>
+                                    <span class="separator"></span>
+                                </div>
+                                <!-- End Section Title -->
+                                <!-- Contact Info -->
+                                <div class="content-block contact-info-block">
+                                    <!-- Row -->
+                                    <div class="row  row-items">
+                                        <!-- Contact Address -->
+                                        <div class="col-md-6 row-item d-flex align-items-stretch">
+                                            <div class="card-body d-flex flex-row">
+                                                <div class="card-icon"><i class="fa fa-envelope"></i></div>
+                                                <div class="card-content ml-3">
+                                                    <h3>Email</h3>
+                                                    <p><a href="mailto:enmanuelzpeda9@gmail.com">enmanuelzpeda9@gmail.com</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Contact Address -->
+                                        <!-- Contact Social Profiles -->
+                                        <div class="col-md-6 row-item d-flex align-items-stretch">
+                                            <div class="card-body d-flex flex-row">
+                                                <div class="card-icon"><i class="fa fa-share-alt"></i></div>
+                                                <div class="card-content ml-3">
+                                                    <h3 data-i18n="contact_social_title">Redes Sociales</h3>
+                                                    <div class="social-links d-flex flex-wrap">
+                                                        <a href="https://www.linkedin.com/in/diego-enmanuel-zepeda-renderos-794209354/" data-toggle="tooltip" data-placement="top" data-original-title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- End Row -->
+                                    
+                                </div>
+                            <!-- Contact Description -->
+                                <p class="mt-4 mb-3" data-i18n="section_contact_description">
+                                    No dudes en ponerte en contacto conmigo. Siempre estoy abierto a hablar sobre nuevos proyectos, ideas creativas u oportunidades.
+                                </p>
+
+                                <!-- Contact Form -->
+                                <form method="post" action="assets/php/mail.php" id="contact-form" name="contactus" class="contact-form">
+                                    <div class="form-row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <input type="text" id="ContactFormName" name="name" class="form-control"
+                                                    placeholder="Nombre" data-i18n="[placeholder]form_name" required />
+                                                <span class="error_msg" id="name_error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <input type="email" id="ContactFormEmail" name="email" class="form-control"
+                                                    placeholder="Email" data-i18n="[placeholder]form_email" required />
+                                                <span class="error_msg" id="email_error"></span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- End Contact Social Profiles -->
-                                <!-- Contact Email -->
-                                <div class="col-md-6 row-item d-flex align-items-stretch">
-                                    <div class="card-body d-flex flex-row">
-                                        <div class="card-icon"><i class="fa fa-envelope"></i></div>
-                                        <div class="card-content ml-3">
-                                            <h3>Email</h3>
-                                            <p><a href="mailto:enmanuelzpeda9@gmail.com">enmanuelzpeda9@gmail.com</a></p>
+
+                                    <div class="form-row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <input type="tel" id="ContactFormPhone" name="phone" pattern="[0-9\-]*"
+                                                    class="form-control" placeholder="Número Telefónico"
+                                                    data-i18n="[placeholder]form_phone" required />
+                                                <span class="error_msg" id="phone_error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <input type="text" id="ContactSubject" name="subject" class="form-control"
+                                                    placeholder="Asunto" data-i18n="[placeholder]form_subject" required />
+                                                <span class="error_msg" id="subject_error"></span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- End Contact Email -->
-                                <!-- Contact Call -->
-                                <div class="col-md-6 row-item d-flex align-items-stretch">
-                                    <div class="card-body d-flex flex-row">
-                                        <div class="card-icon"><i class="fa fa-phone"></i></div>
-                                        <div class="card-content ml-3">
-                                            <h3>Llamame</h3>
-                                            <p><a href="tel:+503706165">(+503) 7061 8365</a></p>
+
+                                    <div class="form-group">
+                                        <textarea id="ContactFormMessage" name="message" class="form-control" rows="4"
+                                            placeholder="Escribe tu mensaje aquí" data-i18n="[placeholder]form_message" required></textarea>
+                                        <span class="error_msg" id="message_error"></span>
+                                    </div>
+
+                                    <div class="form-group submit mailsendbtn submit_btn mb-0">
+                                        <button type="submit" class="btn btn-primary cmnbtn">
+                                            <span data-i18n="form_send">Enviar Mensaje</span>
+                                        </button>
+                                        <div class="loading">
+                                            <img src="assets/images/ajax-loader.gif" alt="loading" width="16" height="16" />
                                         </div>
                                     </div>
-                                </div>
-                                <!-- End Contact Call -->
+                                </form>
                             </div>
-                            <!-- End Row -->
-                        </div>
-                        <!-- End Contact Info -->
+                        </section>
                         <!-- Contact Form -->
-                        <div class="content-block contact-form-block">
-                            <p class="mt-4 mb-3">No dudes en ponerte en contacto conmigo. Siempre estoy abierto a hablar sobre nuevos proyectos, ideas creativas u oportunidades para ser parte de tus visiones.</p>
-                            <form method="post" action="assets/php/mail.php" id="contact-form" name="contactus" class="contact-form">    
-                                <div class="form-row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <div class="form-group">
-                                            <input type="text" id="ContactFormName" name="name" class="form-control" placeholder="Nombre" required="" />
-                                            <span class="error_msg" id="name_error"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <div class="form-group">
-                                            <input type="email" id="ContactFormEmail" name="email" class="form-control" placeholder="Email" required="" />
-                                            <span class="error_msg" id="email_error"></span>
-                                        </div>
-                                    </div>
+                        
+
+
+                        <footer class="bg-dark text-light py-4">
+                            <div class="container text-center">
+                                <p class="mb-2" data-i18n="footer_copyright">&copy; 2025 Diego Zepeda. Todos los derechos reservados.</p>
+                        
+                                <div class="social-icons mb-2">
+                                    <a href="https://github.com/DiegoZpeda" data-toggle="tooltip" data-placement="top" data-original-title="Github" class="text-light mx-2">
+                                        <i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/diego-enmanuel-zepeda-renderos-794209354/" data-toggle="tooltip" data-placement="top" data-original-title="Linkedin" class="text-light mx-2">
+                                        <i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i>
+                                    </a>
+                                    <a href="mailto:enmanuelzpeda9@" class="text-light mx-2">
+                                        <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
+                                    </a>
                                 </div>
-                                <div class="form-row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <div class="form-group">
-                                            <input type="tel" id="ContactFormPhone" name="phone" pattern="[0-9\-]*" class="form-control" placeholder="Numero Telefonico" value="" required="" />
-                                            <span class="error_msg" id="phone_error"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">  
-                                        <div class="form-group">
-                                            <input type="text" id="ContactSubject" name="subject" class="form-control" placeholder="Asunto" value="" required="" />
-                                            <span class="error_msg" id="subject_error"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea id="ContactFormMessage" name="message" class="form-control" rows="4" placeholder="Escribe tu mensaje aqui"  required=""></textarea>
-                                    <span class="error_msg" id="message_error"></span>
-                                </div>
-                                <div class="form-group submit mailsendbtn submit_btn mb-0">	
-                                    <input type="submit" class="btn btn-primary cmnbtn" name="contactus" value="Enviar Mensaje" />
-                                    <div class="loading">
-                                        <img src="assets/images/ajax-loader.gif" alt="loading" width="16" height="16" />
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="contactus_submit">
-                                <div class="contact_us_text">
-                                    <div class="response-msg"></div>
-                                </div>
+                        
+                                <small data-i18n="footer_quote">No hay problema sin solución, solo un cable mal conectado.</small>
                             </div>
-                        </div>
-                        <!-- End Contact Form -->
-                        <!-- End Info Content Block -->
-                        <!-- Experience Education Content Block -->
-                       
+                        </footer>
+
+
+        
+        <!-- Modales para ampliar diplomas -->
+        <div class="modal fade" id="diplomaModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content"><img src="assets/images/diploma1.jpg" class="img-fluid" alt="Diploma 1"></div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="diplomaModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content"><img src="assets/images/diploma2.PNG" class="img-fluid" alt="Diploma 2"></div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="diplomaModal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content"><img src="assets/images/diploma3.png" class="img-fluid" alt="Diploma 3"></div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="diplomaModal4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content"><img src="assets/images/diploma4.png" class="img-fluid" alt="Diploma 4"></div>
+            </div>
+        </div>
+  
+
+                        
+                        
+                        
         <!-- End Page Wrapper -->
         <!-- *********** Plugins JS Files *********** -->
         <!-- Jquery -->
@@ -342,5 +720,53 @@
         <script src="assets/js/main.js"></script>
         <!-- Switcher JS -->
         <script src="assets/js/switcher.js"></script>
+
+        <!-- Inicio btn traductor -->
+        <button id="translateBtn" class="translate-float-btn">EN</button>
+        <script src="assets/js/idiomas.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            .translate-float-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #79d70f;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-weight: bold;
+                font-size: 16px;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                transition: background-color 0.3s ease;
+                z-index: 1000;
+            }
+            .translate-float-btn:hover {
+                background-color: #79d70f;
+            }
+            .carousel-inner {
+                height: 300px; /* Puedes ajustar esta altura según tu diseño */
+                overflow: hidden;
+            }
+
+            .carousel-inner img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+            .form-label {
+                font-weight: 600;
+                font-size: 0.9rem;
+                margin-bottom: 5px;
+                display: block;
+                color: #555;
+             }
+                .form-group {
+                margin-bottom: 1.5rem;
+            }
+            </style>
+        <!-- Final btn traductor -->
     </body>
 </html>

@@ -52,8 +52,8 @@
             $('#header').removeClass("sticky-header fadeInDown");
         }
     });
-    $('.main-wrapper').on('click', '.about-btn', function () {
-        $('.navbar li a[href="#about"]').trigger('click');
+    $('.main-wrapper').on('click', '.contact-btn', function () {
+        $('.navbar li a[href="#contact"]').trigger('click');
     });
     $('.main-wrapper').on('click', '.portfolio-btn', function () {
         $('.navbar li a[href="#portfolio"]').trigger('click');

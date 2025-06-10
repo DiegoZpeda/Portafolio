@@ -331,6 +331,9 @@ p:last-child { margin-bottom:0; }
 .switcher-wrapper .switcher-inner .magenta button { background:#ff00ff; }
 .switcher-wrapper .switcher-inner .red button { background:#ff5d56; }
 
+.about-text {
+    text-align: justify;
+}
 
 /*-----------------------------------------
 * 16. Responsive CSS
@@ -410,4 +413,42 @@ p:last-child { margin-bottom:0; }
     object-fit: cover; /* Asegura que la imagen se ajuste al marco sin distorsionarse */
 }
 
+:root {
+    --main-color: #79d70f;
+  }
 
+  /* Estilo para los tabs */
+  .nav-tabs .nav-link {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    font-weight: 600;
+  }
+
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-link:hover {
+    background-color: var(--main-color);
+    color: #fff;
+  }
+
+  /* Tarjetas de intereses */
+  .interest-card {
+    background: #fff;
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .interest-card:hover {
+    background-color: var(--main-color);
+    color: white;
+    transform: translateY(-5px);
+  }
