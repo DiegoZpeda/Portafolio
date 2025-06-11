@@ -454,8 +454,8 @@
                                             
                                         </p>
                                         
-                                        <a class="btn btn-primary mt-3" href="https://github.com/EmerLopez/shulton_parking" target="_blank">
-                                            <i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i> 
+                                        <a class="btn btn-primary mt-3" style="margin-bottom: 30px;" href="https://github.com/EmerLopez/shulton_parking" target="_blank">
+                                            <i class="fa-brands fa-github fa-lg" style="color: #ffffff; "></i> 
                                             <span data-i18n="view_github">Ver en GitHub</span>
                                         </a>
                                     </div>
@@ -484,7 +484,7 @@
                                 </div>
                 
                                 <!-- Proyecto 2 -->
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-2">
                                     <div class="about-text">
                                         <h4 data-i18n="p2_title">WonderZoo</h4>
                                         <p>
@@ -504,7 +504,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                     <div id="carouselProyecto2" class="carousel slide about-details" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
@@ -525,7 +525,7 @@
                                 </div>
                 
                                 <!-- Proyecto 3 -->
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                     <div class="about-text">
                                         <h4 data-i18n="p3_title">INU-NET</h4>
                                         <p>
@@ -541,7 +541,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                     <div id="carouselProyecto3" class="carousel slide about-details" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
@@ -568,7 +568,7 @@
                                 </div>
                 
                                 <!-- Proyecto 4 -->
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                     <div class="about-text">
                                         <h4 data-i18n="p4_title">Virtu-Call</h4>
                                         <p>
@@ -584,7 +584,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
                                     <div id="carouselProyecto4" class="carousel slide about-details" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
@@ -702,20 +702,26 @@
                                     <!-- Honeypot antispam -->
                                     <input type="text" name="_gotcha" style="display: none" />
 
-                                    <div class="form-group submit mailsendbtn submit_btn mb-0">
-                                        <button type="submit" class="btn btn-primary cmnbtn">
-                                        <span data-i18n="form_send">Enviar Mensaje</span>
+                                    
+
+                                    <div class="form-group submit mailsendbtn submit_btn mb-0"
+                                        style="margin-bottom: 30px; display: flex; align-items: center; gap: 20px;">
+                                        <button type="submit" class="btn btn-primary cmnbtn" style="margin-bottom: 30px;">
+                                            <span data-i18n="form_send">Enviar Mensaje</span>
                                         </button>
+
                                         <div class="loading" style="display: none;">
-                                        <img src="assets/images/ajax-loader.gif" alt="loading" width="16" height="16" />
+                                            <img src="assets/images/ajax-loader.gif" alt="loading" width="16" height="16" />
+                                        </div>
+
+                                        <div id="success-message"
+                                            class="alert alert-success"
+                                            style="display: none; margin-bottom: 30px; padding: 10px 12px; font-size: 0.9rem; line-height: 1.2;"
+                                            data-i18n="form_success">
+                                            ¡Gracias! Tu mensaje ha sido enviado correctamente.
                                         </div>
                                     </div>
-                                    </form>
 
-                                    <!-- Mensaje de éxito -->
-                                    <div id="success-message" style="display: none; margin-top: 20px;" class="alert alert-success" data-i18n="form_success">
-                                    ¡Gracias! Tu mensaje ha sido enviado correctamente.
-                                    </div>
                                 </div>
                                 </section>
 
@@ -765,9 +771,10 @@
                                     <a href="https://www.linkedin.com/in/diego-enmanuel-zepeda-renderos-794209354/" data-toggle="tooltip" data-placement="top" data-original-title="Linkedin" class="text-light mx-2">
                                         <i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i>
                                     </a>
-                                    <a href="mailto:enmanuelzpeda9@" class="text-light mx-2">
+                                    <a href="mailto:enmanuelzpeda9@gmail.com?subject=Contacto%20desde%20la%20web&body=Hola,%20quiero%20ponerme%20en%20contacto%20contigo." class="text-light mx-2">
                                         <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
                                     </a>
+
                                 </div>
                         
                                 <small data-i18n="footer_quote">No hay problema sin solución, solo un cable mal conectado.</small>
