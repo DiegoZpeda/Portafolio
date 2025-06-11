@@ -667,19 +667,17 @@
                                 </p>
 
                                 <!-- Contact Form -->
-                                <form method="post" action="assets/php/mail.php" id="contact-form" name="contactus" class="contact-form">
+                                <form method="POST" action="https://formspree.io/f/xldnjqlw" id="contact-form" class="contact-form">
                                     <div class="form-row">
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <input type="text" id="ContactFormName" name="name" class="form-control"
-                                                    placeholder="Nombre" data-i18n="[placeholder]form_name" required />
+                                                <input type="text" name="name" class="form-control" placeholder="Nombre" required />
                                                 <span class="error_msg" id="name_error"></span>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <input type="email" id="ContactFormEmail" name="email" class="form-control"
-                                                    placeholder="Email" data-i18n="[placeholder]form_email" required />
+                                                <input type="email" name="email" class="form-control" placeholder="Email" required />
                                                 <span class="error_msg" id="email_error"></span>
                                             </div>
                                         </div>
@@ -688,41 +686,40 @@
                                     <div class="form-row">
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <input type="tel" id="ContactFormPhone" name="phone" pattern="[0-9\-]*"
-                                                    class="form-control" placeholder="Número Telefónico"
-                                                    data-i18n="[placeholder]form_phone" required />
+                                                <input type="tel" name="phone" pattern="[0-9\-]*" class="form-control" placeholder="Número Telefónico" required />
                                                 <span class="error_msg" id="phone_error"></span>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <input type="text" id="ContactSubject" name="subject" class="form-control"
-                                                    placeholder="Asunto" data-i18n="[placeholder]form_subject" required />
+                                                <input type="text" name="subject" class="form-control" placeholder="Asunto" required />
                                                 <span class="error_msg" id="subject_error"></span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <textarea id="ContactFormMessage" name="message" class="form-control" rows="4"
-                                            placeholder="Escribe tu mensaje aquí" data-i18n="[placeholder]form_message" required></textarea>
+                                        <textarea name="message" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
                                         <span class="error_msg" id="message_error"></span>
                                     </div>
 
+                                    <!-- Campo honeypot para evitar spam -->
+                                    <input type="text" name="_gotcha" style="display:none">
+
                                     <div class="form-group submit mailsendbtn submit_btn mb-0">
                                         <button type="submit" class="btn btn-primary cmnbtn">
-                                            <span data-i18n="form_send">Enviar Mensaje</span>
+                                            <span>Enviar Mensaje</span>
                                         </button>
-                                        <div class="loading">
+                                        <div class="loading" style="display: none;">
                                             <img src="assets/images/ajax-loader.gif" alt="loading" width="16" height="16" />
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                        </section>
-                        <!-- Contact Form -->
-                        
-
+                                                        
+                        <!-- Mensaje de éxito -->
+                        <div id="success-message" style="display: none; margin-top: 20px;" class="alert alert-success">
+                            ¡Gracias! Tu mensaje ha sido enviado correctamente.
+                        </div>
 
                         <footer class="bg-dark text-light py-4">
                             <div class="container text-center">
@@ -836,6 +833,40 @@
         <script src="assets/js/main.js"></script>
         <!-- Switcher JS -->
         <script src="assets/js/switcher.js"></script>
+
+
+
+        <script>
+            document.getElementById("contact-form").addEventListener("submit", async function (e) {
+                e.preventDefault();
+                const form = e.target;
+                const loading = form.querySelector(".loading");
+                const successMessage = document.getElementById("success-message");
+
+                loading.style.display = "inline-block";
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: "POST",
+                        body: new FormData(form),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        form.reset();
+                        successMessage.style.display = "block";
+                    } else {
+                        alert("Ocurrió un error al enviar el formulario. Intenta nuevamente.");
+                    }
+                } catch (error) {
+                    alert("No se pudo enviar el formulario. Verifica tu conexión.");
+                } finally {
+                    loading.style.display = "none";
+                }
+            });
+        </script>
 
         <!-- Inicio btn traductor -->
         <button id="translateBtn" class="translate-float-btn">EN</button>
