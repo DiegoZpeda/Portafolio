@@ -9,6 +9,7 @@
     "b8":"No hay problema sin solución, solo un cable mal conectado.",
     "b9":"Contáctame",
     "b10":"Mis Proyectos",
+    "b11":"Mis Diplomas",
     "A1":"Acerca de",
     "A2":"mi",
     "A3":"Hola a",
@@ -91,5 +92,8 @@
     "diploma_name3": "Concurso estudiantil de investigación",
     "diploma_desc3": "Reconocimiento por participación en el concurso estudiantil de investigación de cátedra 2024 UGB.",
     "diploma_name4": "Certificado CCNAv7",
-    "diploma_desc4": "Certificado por completar CCNAv7: Switching, Routing, and Wireless Essentials."
+    "diploma_desc4": "Certificado por completar CCNAv7: Switching, Routing, and Wireless Essentials.",
+
+    "testimonials_title1": "Mis",
+    "testimonials_title2": "Testimonios"
 }

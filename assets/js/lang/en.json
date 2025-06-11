@@ -9,6 +9,7 @@
     "b8":"There is no problem without a solution, just a badly connected cable.",
     "b9":"Contact me",
     "b10":"My Projects",
+    "b11":"My Diplomas",
     "A1":"About",
     "A2":"me",
     "A3":"Hello",
@@ -91,5 +92,8 @@
     "diploma_name3": "Student Research Contest",
     "diploma_desc3": "Recognition for participation in the 2024 UGB student research contest.",
     "diploma_name4": "CCNAv7 Certificate",
-    "diploma_desc4": "Certified for completing CCNAv7: Switching, Routing, and Wireless Essentials."
+    "diploma_desc4": "Certified for completing CCNAv7: Switching, Routing, and Wireless Essentials.",
+
+    "testimonials_title1": "My",
+    "testimonials_title2": "Testimonials"
     }
